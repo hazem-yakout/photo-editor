@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="Photo Editor Website" content="A Good Photo Editor Website" />
+    <title>Photo Editor Website</title>
+    <link rel="stylesheet" href="edit.css" />
+  </head>
+
+  <body>
+    <header class="logo">
+      <div class="h">
+        <img src="D:\hazem website\hazem.jpg" width="50px" height="40px" />Photo
+        Editor
+
+        <span>by Hazem Yakout</span>
+      </div>
+    </header>
+    <div class="container">
+      <div class="img">
+        <div class="img-b">
+          <img id="img" />
+          <canvas id="canvas"></canvas>
+        </div>
+        <div class="upload">
+          <label for="upload">Upload</label>
+          <input type="file" id="upload" />
+        </div>
+      </div>
+
+      <div class="filter">
+        <ul>
+          <li>
+            <label for="saturate">Saturate</label>
+            <input type="range" min="0" max="200" value="100" id="saturate" />
+          </li>
+
+          <li>
+            <label for="contrast">Contrast</label>
+            <input type="range" min="0" max="200" value="100" id="contrast" />
+          </li>
+          <li>
+            <label for="brightness">Brightness</label>
+            <input type="range" min="0" max="200" value="100" id="brightness" />
+          </li>
+          <li>
+            <label for="sepia">Sepia</label>
+            <input type="range" min="0" max="100" value="0" id="sepia" />
+          </li>
+          <li>
+            <label for="grayscale">Grayscale</label>
+            <input
+              type="range"
+              step="0.1"
+              min="0"
+              max="1"
+              value="0"
+              id="grayscale"
+            />
+          </li>
+          <li>
+            <label for="blur">Blur</label>
+            <input
+              type="range"
+              step="0.1"
+              min="0"
+              max="10"
+              value="0"
+              id="blur"
+            />
+          </li>
+          <li>
+            <label for="hue-rotate">Hue Rotate</label>
+            <input type="range" min="0" max="350" value="0" id="hue-rotate" />
+          </li>
+          <li class="child">
+            <a download="true" id="download">Download</a>
+            <span onclick="resetValue()" class="s">Reset</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="j.js"></script>
+  </body>
+</html>
