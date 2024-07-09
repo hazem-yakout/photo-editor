@@ -80,6 +80,7 @@ canvas {
   direction: rtl;
   margin-top:25px;
   transform: translate(0, 50px);
+  align-items:center;
 }
 
 ul li {
