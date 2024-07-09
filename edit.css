@@ -78,6 +78,7 @@ canvas {
   flex-direction: column;
   gap: 30px;
   direction: rtl;
+  margin-top:25px;
   transform: translate(0, 50px);
 }
 
